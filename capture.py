@@ -30,8 +30,8 @@ while True:
         c.execute("INSERT INTO stats VALUES (?, ?, ?)", (now, stars, forks))
         conn.commit()
 
-        # Wait for an hour before making the next request
-        time.sleep(3600)
+        # Wait ten minutes before making the next request
+        time.sleep(600)
     else:
         # If the request was unsuccessful, print an error message and wait for 10 minutes before trying again
         print('Error: {}'.format(response.status_code))
