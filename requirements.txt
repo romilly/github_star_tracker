@@ -1,2 +1,2 @@
 matplotlib==3.8.2
-Requests==2.31.0
+Requests==2.32.0
